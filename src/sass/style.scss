@@ -1,0 +1,69 @@
+#app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+        .card {
+            border: solid black 1px;
+            height: 120px;
+            width: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            display:flex;
+            flex-direction: row;
+            &__extended {
+                height: 200px;
+                border: solid black 1px;
+            }
+        }
+
+        .poster {
+            height: 120px;
+            width: 100px;
+            padding: 10px;
+        }
+
+                .img {
+                    height: 100px;
+                    object-fit: contain;
+                }
+
+        .infoArea {
+            height: 120px;
+            width: 200px;
+            position: relative;
+            right: 10px;
+            &__extended {
+                height: 200px;
+            }
+        }
+                
+                .title {
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+
+                .year {
+                    font-size: 1rem;
+                    position: absolute;
+                    right: 10px;
+                    bottom: 0px;
+                    text-align: end;
+                }
+
+                .plot {
+                    display: none;
+                    &__unhide {
+                        display: block;
+                        position: relative;
+                        bottom: 0px;
+                    }
+                }
+
+p {
+    margin-bottom: 5px;
+}                
+  
+
+ 
